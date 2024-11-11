@@ -1,0 +1,283 @@
+<style type="text/css">
+    body {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight:300;
+        font-size:18px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1100px;
+    }
+
+    h1 {
+        font-weight:300;
+    }
+
+    .disclaimerbox {
+        background-color: #eee;
+        border: 1px solid #eeeeee;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+        padding: 20px;
+    }
+
+    video.header-vid {
+        height: 140px;
+        border: 1px solid black;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+    }
+
+    img.header-img {
+        height: 140px;
+        border: 1px solid black;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+    }
+
+    img.rounded {
+        border: 1px solid #eeeeee;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+    }
+
+    a:link,a:visited
+    {
+        color: #1367a7;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #208799;
+    }
+
+    td.dl-link {
+        height: 160px;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+        box-shadow:
+                0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+                5px 5px 0 0px #fff, /* The second layer */
+                5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+                10px 10px 0 0px #fff, /* The third layer */
+                10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+                15px 15px 0 0px #fff, /* The fourth layer */
+                15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+                20px 20px 0 0px #fff, /* The fifth layer */
+                20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+                25px 25px 0 0px #fff, /* The fifth layer */
+                25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+        margin-left: 10px;
+        margin-right: 45px;
+    }
+
+
+    .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+        box-shadow:
+                0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+                5px 5px 0 0px #fff, /* The second layer */
+                5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+                10px 10px 0 0px #fff, /* The third layer */
+                10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 30px;
+        margin-bottom: 5px;
+    }
+
+    .vert-cent {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    hr
+    {
+        border: 0;
+        height: 1.5px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
+</style>
+
+
+  
+        <title>RMDRL</title>
+        <meta property="og:title" content="MVC">
+  </head>
+
+  <body data-new-gr-c-s-check-loaded="14.991.0" data-gr-ext-installed="">
+    <br>
+    <center>
+    <span style="font-size:42px">Robot Manipulation with Deep Reinforcement Learning</span>
+    </center>
+
+    
+      
+      <table align="center" width="700px">
+       <tbody><tr>
+        <td align="center" width="100px">
+        <center>
+        <span style="font-size:20px">Bengisu Guresti</sup></span>
+        </center>
+        </td>
+        <td align="center" width="100px">
+        <center>
+        <span style="font-size:20px"><a href="https://web.itu.edu.tr/sariel/">Sanem Sariel</sup></a></span>
+        </center>
+        </td>
+
+     
+     </tr></tbody>
+            <br>  
+            <center>
+                <span style="font-size:28px">&nbsp;<a href="https://github.com/bengisug/robotics_rl"> GitHub</a></span>
+                <br>
+                
+                <br>
+             <center><h1>Abstract</h1></center><table align="center" width="900px">
+                <br><br>
+                <div align="justify">Robotics is a promising interdisciplinary field with application areas that free humans
+                    of manual labor or high risk services. In order to build robots that have the capability of taking jobs that require manual labor or services of high risk and operating in
+                    the world, it is essential to provide the robots with the necessary manipulation skills.
+                    Reinforcement Learning (RL) paradigm is used in order to build robot manipulation skills.
+                    The targeted manipulation skills are: reach a random target point, 
+                    push an object to a random target point, and grasp a specific object in a specific position.
+                    Both shaped and sparse reward signals are used in this project. The RL algorithms that are used
+                    for training are Deep Deterministic Policy Gradients (DDPG) and Soft Acor Critic (SAC) with learned temperature parameter.
+                    Because shaped rewards are inclined to bias solutions towards suboptimal policies, 
+                    we investigate the performance of sparse rewards. However, sparse rewards
+                    make it very difficult to encounter a reward that indicates success in the already complex state-action space of the robot. 
+                    Not encountering sufficient rewards that indicate
+                    success cripples the learning process due to lack of positive feedback to the system. In
+                    order to remedy this issue, we use Hindsight Experience Replay
+                    (HER) to increase the probability of encountering successful sparse rewards valid for
+                    multi task environments while at the same time ensuring learning from mistakes. We also
+                    modify HER with domain knowledge such that only successful proposals arer added to the Hindsight buffer. 
+                    This approach significantly improves learning performance. Robot is successful in
+                    learning to reach a target, to push an object, and to grasp an object.</div>
+                    <br><br>
+                <tbody><tr>
+                    <td width="700px">
+                      <center>
+                          <a href="bsc.png"><img src="bsc.png" height="400px"></a><br>
+                    </center>
+                    </td>
+                </tr>
+                    <tr><td width="600px">
+                      <center>
+                          <span style="font-size:14px"><i> </i>
+                    </span></center>
+                    </td>
+                </tr>
+            </tbody></table>
+
+            <br><br>
+            <br><br>
+
+          <hr>
+
+
+          <center><h1>Presentation</h1></center>
+
+          <table align="center" width="900px">
+            </tr>
+            <tr><td width="600px">
+            <center>
+                <span style="font-size:16px"> <span style="font-weight">Grasp</span>
+            </span></center>
+            </td>
+            </tr>
+              <tbody><tr>
+                  <td width="600px">
+                    <center>
+                        <video width="600" height="450" controls>
+                        <source src="bsc_files/grasp_sac.mp4" type="video/mp4">
+                      </video>
+                  </center>
+                  </td>
+
+          </tbody></table>
+          <br><br>
+          <br><br>
+          <table align="center" width="900px">
+            </tr>
+            <tr><td width="600px">
+            <center>
+                <span style="font-size:16px"> <span style="font-weight">Reach</span>
+            </span></center>
+            </td>
+            </tr>
+            <tbody><tr>
+                <td width="600px">
+                    <center>
+                        <video width="600" height="450" controls>
+                        <source src="bsc_files/Reach_SAC_Sparse_MHIND.mp4" type="video/mp4">
+                    </video>
+                </center>
+                </td>
+
+        </tbody></table>
+
+        <br><br>
+        <br><br>
+
+            <table align="center" width="900px">
+            </tr>
+            <tr><td width="600px">
+            <center>
+                <span style="font-size:16px"> <span style="font-weight">Push with Constraint</span>
+            </span></center>
+            </td>
+            </tr>
+            <tbody><tr>
+                <td width="600px">
+                    <center>
+                        <video width="600" height="450" controls>
+                        <source src="bsc_files/Push_Full_Range_Const.mp4" type="video/mp4">
+                    </video>
+                </center>
+                </td>
+
+            </tbody></table>
+            <br><br>
+            <br><br>
+            <table align="center" width="900px">
+            </tr>
+            <tr><td width="600px">
+            <center>
+                <span style="font-size:16px"> <span style="font-weight">Push without Constraint</span>
+            </span></center>
+            </td>
+            </tr>
+            <tbody><tr>
+                <td width="600px">
+                    <center>
+                        <video width="600" height="450" controls>
+                        <source src="bsc_files/PUSH_Full_Range_NoConst.mp4" type="video/mp4">
+                    </video>
+                </center>
+                </td>
+
+            </tbody></table>
+           <hr>
+
+            <table align="center" width="1100px">
+                <tbody><tr>
+                    <td>
+                      <left>
+                <center><h1>Acknowledgements</h1></center>
+                This research is fully funded by a grant from the Scientific and Technological Research Council of Turkey (TUBITAK), Grant No.  119E436. This webpage template was borrowed from <a href="https://richzhang.github.io/colorization/">colorful folks</a>.
+            </left>
+        </td>
+        </tr>
+        </tbody></table>
+
+        <br><br>
+
+
+</body></html>
