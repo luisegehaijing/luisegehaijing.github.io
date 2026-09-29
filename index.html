@@ -1,338 +1,318 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-
-<html>
-  <head>
-  <meta name=viewport content=“width=800”>
-  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
-  <meta charset="utf-8"> 
-  <style type="text/css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luise Ge</title>
+  <link rel="icon" type="image/png" href="media/color_headshot_favicon.png">
+  <style>
     /* Color scheme stolen from Sergey Karayev */
-    a {
-    color: #1772d0;
-    text-decoration:none;
+    a { color: #1772d0; text-decoration: none; }
+    a:focus, a:hover { color: #f09228; text-decoration: none; }
+    body, td, th, tr, p, a, li, div {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 12px;
     }
-    a:focus, a:hover {
-    color: #f09228;
-    text-decoration:none;
-    }
-    body,td,th,tr,p,a {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 12px
-    }
-    strong {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 12px;
-    }
-    heading {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 14px;
-    }
-    papertitle {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 12px;
-    font-weight: 700
-    }
-    name {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 14px;
-    }
-    .one
-    {
-    width: 160px;
-    height: 160px;
-    position: relative;
-    }
-    .two
-    {
-    width: 160px;
-    height: 160px;
-    position: absolute;
-    transition: opacity .2s ease-in-out;
-    -moz-transition: opacity .2s ease-in-out;
-    -webkit-transition: opacity .2s ease-in-out;
-    }
-    .fade {
-     transition: opacity .2s ease-in-out;
-     -moz-transition: opacity .2s ease-in-out;
-     -webkit-transition: opacity .2s ease-in-out;
-    }
-    span.highlight {
-        background-color: #ffffd0;
+    body { margin: 0; color: #000; }
+    .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+
+    .intro { display: flex; gap: 20px; align-items: center; }
+    .intro-text { flex: 1; }
+    .intro img { width: 200px; height: auto; }
+    .name { font-size: 14px; margin-right: 8px; }
+    .nav a + a::before { content: "/"; color: #000; margin: 0 6px; }
+
+    h2 { font-size: 14px; font-weight: normal; margin: 30px 0 4px; }
+    .note { margin: 0 0 6px; }
+
+    .pubs { list-style: none; margin: 0; padding: 0; }
+    .pub { margin: 0 0 18px; line-height: 1.5; display: flex; }
+    .pub-num { width: 36px; flex-shrink: 0; font-weight: 700; color: #003366; }
+    .pub-body { flex: 1; }
+    h3 { font-size: 12px; font-weight: 700; margin: 18px 0 10px; }
+    .pub-title { font-weight: 700; color: #003366; }
+    .me { font-weight: 700; }
+    .pub-venue { font-style: italic; color: #4B0082; }
+    .pub-venue a { color: #4B0082; }
+    .pub-venue a:hover { color: #f09228; }
+    .award { color: #d62828; font-weight: 700; font-style: normal; }
+
+    footer { text-align: right; margin-top: 30px; }
+    footer, footer a { font-size: 11px; }
+
+    @media (max-width: 600px) {
+      .intro { flex-direction: column-reverse; }
     }
   </style>
-  <link rel="icon" type="image/png" href="media/color_headshot_favicon.png">
-  <title>Luise Ge</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
-  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  </head>
-  <body>
-  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
-    <td>
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-      <!--<tr onmouseout="headshot_stop()" onmouseover="headshot_start()">-->
-      <tr>
-        <td width="75%" valign="middle">
-        <p align="Left">
-          <name>Luise Ge</name>
-          <a href="mailto:g.luise@wustl.edu">           email &nbsp/&nbsp </a> 
-          <a href="CV.pdf"> CV  &nbsp/&nbsp </a> 
-          <a href="Teaching.html">Teaching </a>  
-          
-          <!--a href="https://scholar.google.com/citations?user=Q_86mnMAAAAJ&hl=en&oi=ao">Google Scholar</a> &nbsp/&nbsp-->
-        </p>
-        <p>
-            I am a Computer Science PhD candidate at Washington University in St. Louis, advised by Prof. <a href="https://vorobeychik.com">Yevgeniy Vorobeychik</a>.
-My current research interests are the foundations of AI (learning, reasoning, planning) and the computational aspects of social issues (alignment and mechanism design). </p>
- <p>
-        I started out as a cognitive science student at the University of Edinburgh, with the passion to figure out how mind works. While this curiosity has never diminished, it just happened that the beauty of maths struck me greatly. 
-          I ended up getting a MSc in pure maths at Imperial College London under the guidance of the amazing  <a href="https://www.imperial.ac.uk/people/p.cascini">Paolo Cascini</a>. My master thesis was on algebraic geometry inspired by a fantastic idea called <a href=https://en.wikipedia.org/wiki/Periodic_table_of_shapes> "the periodic table of shapes".</a> 
-          I have turned back to CS due to both its philosophical considerations and societal impact. Outside of research, you may find me reading, writing, watching <a href="misc/some_of_my_favs.html">films</a> and plays, making <a href="figures/beaver.jpg">art</a>, or traveling.
-        </p>
-     
-        </td>
-        <td width="25%">
-          <img src="figures/luise_ge.jpg" width="250" alt="headshot">
-        </td>
-      </tr>
-      </table>
+</head>
+<body>
+<div class="container">
 
-      <tr>
-        <td width="100%" valign="middle">
-          <heading>Research</heading>
-          <ul>
-<style>
-  papertitle {
-    color: #003366;  /* deep blue for titles */
-    font-weight: bold;
-  }
-  .venue {
-    color: #4B0082;  /* dark purple for venues */
-    font-style: italic;
-  }
-</style>
+  <!-- ================= Intro ================= -->
+  <section class="intro">
+    <div class="intro-text">
+      <p class="nav"><span class="name">Luise Ge</span>
+        <a href="mailto:g.luise@wustl.edu">Email</a><a href="CV.pdf">CV</a>
+        <!-- <a href="https://scholar.google.com/citations?user=Q_86mnMAAAAJ&hl=en&oi=ao">Google Scholar</a> -->
+      </p>
+      <p>
+        I am a Computer Science PhD candidate at Washington University in St. Louis, advised by
+        Prof. <a href="https://vorobeychik.com">Yevgeniy Vorobeychik</a>.
+        My current research interests are the foundations of AI (learning, reasoning, planning) and the
+        computational aspects of social issues (alignment and mechanism design).
+      </p>
+      <p>
+        I started out as a cognitive science student at the University of Edinburgh, with the passion to
+        figure out how the mind works. While this curiosity has never diminished, it just happened that the
+        beauty of maths struck me greatly. I ended up getting an MSc in pure maths at Imperial College London
+        under the guidance of the amazing <a href="https://www.imperial.ac.uk/people/p.cascini">Paolo Cascini</a>.
+        My master's thesis was on algebraic geometry, inspired by a fantastic idea called
+        <a href="https://en.wikipedia.org/wiki/Periodic_table_of_shapes">"the periodic table of shapes"</a>.
+        I have turned back to CS due to both its philosophical considerations and societal impact.
+        Outside of research, you may find me reading, writing, watching <a href="misc/some_of_my_favs.html">films</a>
+        and plays, making <a href="figures/beaver.jpg">art</a>, or traveling.
+      </p>
+    </div>
+    <img src="figures/luise_ge.jpg" alt="Luise Ge headshot">
+  </section>
 
-<ul> 
+  <!-- ================= Research ================= -->
+  <h2>Research</h2>
+  <p class="note">C = conference, W = workshop, T = thesis. (α-β) denotes alphabetical author order.</p>
 
-  <li>
-    <papertitle> Linear Social Choice with Few Queries: A Moment-Based Approach</papertitle>
-    <br>
-    <strong>Luise Ge</strong>, 
-    <a href="https://daniel-halpern.com">Daniel Halpern</a>, 
-    <a href="https://gregorykehne.com">Gregory Kehne</a>, 
-    <a href="https://vorobeychik.com">Yvegeniy Vorobeychik</a>
-    <br>
-    <span class="venue" href="https://www.siam.org/conferences-events/siam-conferences/soda27/">2027 SODA</span>
-   ( <span class="venue" href="https://www.econometricsociety.org/regional-activities/schedule/2026/06/16/2026-ESIFEconomics-and-AIML-Meeting">previously presented at 2026 ESIF AI+ML meeting</span>)
-    <br>
-    [<a href="https://arxiv.org/pdf/2603.19510">arXiv</a>] [<a href="projects/005_slides.pdf">Slides</a>]
-  </li>
+  <h3>Publications</h3>
 
-  
+  <ul class="pubs">
 
-     <li>
-    <papertitle> Query-Driven Learning for Lifted Reasoning </papertitle>
-    <br>
-    (α-β)
-    <strong>Luise Ge</strong>, 
-     <a href="https://www.cse.wustl.edu/~bjuba/">Brendan Juba</a>, 
-    <br>
-    <span class="venue">2026 IJCLR (International Joint Conference on Learning & Reasoning) </span>
-    <br>
-  </li>
+    <li class="pub">
+      <div class="pub-num">C9</div>
+      <div class="pub-body">
+      <div class="pub-title">Linear Social Choice with Few Queries: A Moment-Based Approach</div>
+      <div class="pub-authors">
+        <span class="me">Luise Ge</span>,
+        <a href="https://daniel-halpern.com">Daniel Halpern</a>,
+        <a href="https://gregorykehne.com">Gregory Kehne</a>,
+        <a href="https://vorobeychik.com">Yevgeniy Vorobeychik</a>
+      </div>
+      <div class="pub-venue">
+        <a href="https://www.siam.org/conferences-events/siam-conferences/soda27/">SODA 2027</a>
+        <span class="also">(previously presented at the
+          <a href="https://www.econometricsociety.org/regional-activities/schedule/2026/06/16/2026-ESIFEconomics-and-AIML-Meeting">2026 ESIF Economics and AI+ML Meeting</a>)</span>
+      </div>
+      <div class="pub-links">
+        [<a href="https://arxiv.org/pdf/2603.19510">arXiv</a>] [<a href="projects/005_slides.pdf">Slides</a>]
+      </div>
+      </div>
+    </li>
 
-  
+    <li class="pub">
+      <div class="pub-num">C8</div>
+      <div class="pub-body">
+      <div class="pub-title">Query-Driven Learning for Lifted Reasoning</div>
+      <div class="pub-authors">
+        (α-β)
+        <span class="me">Luise Ge</span>,
+        <a href="https://www.cse.wustl.edu/~bjuba/">Brendan Juba</a>
+      </div>
+      <div class="pub-venue">IJCLR 2026 <span class="also">(International Joint Conference on Learning &amp; Reasoning)</span></div>
+      <div class="pub-links">
+        [<a href="projects/007_slides.pdf">Slides</a>]
+      </div>
+      </div>
+    </li>
 
-   <li>
-    <papertitle> Lifted Relational Probabilistic Inference via Implicit Learning </papertitle>
-    <br>
-    (α-β)
-    <strong>Luise Ge</strong>, 
-     <a href="https://www.cse.wustl.edu/~bjuba/">Brendan Juba</a>, 
-    <a href="https://sites.wustl.edu/krisnilsson/">Kris Nilsson</a>,
-     <a> Alison Shao</a>
-    <br>
-    <span class="venue">2026 UAI</span>
-    <br>
-    [<a href="https://arxiv.org/pdf/2602.14890">arXiv</a>] 
-  </li>
+    <li class="pub">
+      <div class="pub-num">C7</div>
+      <div class="pub-body">
+      <div class="pub-title">Lifted Relational Probabilistic Inference via Implicit Learning</div>
+      <div class="pub-authors">
+        (α-β)
+        <span class="me">Luise Ge</span>,
+        <a href="https://www.cse.wustl.edu/~bjuba/">Brendan Juba</a>,
+        <a href="https://sites.wustl.edu/krisnilsson/">Kris Nilsson</a>,
+        Alison Shao
+      </div>
+      <div class="pub-venue">UAI 2026</div>
+      <div class="pub-links">
+        [<a href="https://arxiv.org/pdf/2602.14890">arXiv</a>]
+      </div>
+      </div>
+    </li>
 
+    <li class="pub">
+      <div class="pub-num">C6</div>
+      <div class="pub-body">
+      <div class="pub-title">COSMOS: Model-Agnostic Personalized Federated Learning with Clustered Server Models and Pseudo-Label-Only Communication</div>
+      <div class="pub-authors">
+        Ben Rachmut,
+        <span class="me">Luise Ge</span>,
+        <a href="https://yeoh-lab.wustl.edu">William Yeoh</a>,
+        <a href="https://cybersecurity.seas.wustl.edu">Ning Zhang</a>,
+        <a href="https://vorobeychik.com">Yevgeniy Vorobeychik</a>
+      </div>
+      <div class="pub-venue">ECML PKDD 2026 <span class="award">✦ Best Research Paper Nominee ✦</span></div>
+      <div class="pub-links">
+        [<a href="https://arxiv.org/pdf/2605.11165">arXiv</a>] [<a href="projects/006_slides.pdf">Slides</a>]
+      </div>
+      </div>
+    </li>
 
-  
+    <li class="pub">
+      <div class="pub-num">C5</div>
+      <div class="pub-body">
+      <div class="pub-title">Mind the (DH) Gap! A Contrast in Risky Choices Between Reasoning and Conversational LLMs</div>
+      <div class="pub-authors">
+        <span class="me">Luise Ge</span>,
+        Yongyan Zhang,
+        <a href="https://vorobeychik.com">Yevgeniy Vorobeychik</a>
+      </div>
+      <div class="pub-venue">ACL 2026 <span class="award">✦ Outstanding Paper Award ✦</span></div>
+      <div class="pub-links">
+        [<a href="https://arxiv.org/pdf/2602.15173">arXiv</a>] [<a href="projects/004_slides.pdf">Slides</a>]
+      </div>
+      </div>
+    </li>
 
+    <li class="pub">
+      <div class="pub-num">C4</div>
+      <div class="pub-body">
+      <div class="pub-title">Optimized Distortion in Linear Social Choice</div>
+      <div class="pub-authors">
+        <span class="me">Luise Ge</span>,
+        <a href="https://gregorykehne.com">Gregory Kehne</a>,
+        <a href="https://vorobeychik.com">Yevgeniy Vorobeychik</a>
+      </div>
+      <div class="pub-venue">AAAI 2026 <span class="award">✦ Oral ✦</span></div>
+      <div class="pub-links">
+        [<a href="https://arxiv.org/pdf/2510.20020">arXiv</a>] [<a href="projects/003_slides.pdf">Slides</a>]
+      </div>
+      </div>
+    </li>
 
-    <li>
-    <papertitle> COSMOS: Model-Agnostic Personalized Federated Learning with Clustered Server Models and Pseudo-Label-Only Communication</papertitle>
-    <br>
-    <a >Ben Rachmut</a>, 
-    <strong>Luise Ge</strong>, 
-    
-    <a href="https://yeoh-lab.wustl.edu">William Yeoh </a>, 
-    <a href="https://cybersecurity.seas.wustl.edu">Ning Zhang </a>, 
-    <a href="https://vorobeychik.com">Yvegeniy Vorobeychik</a>
-    <br>
-    <span class="venue">2026 ECMLPKDD  (✦Nominated for best research paper✦)</span>
-    <br>
-    [<a href="https://arxiv.org/pdf/2605.11165">arXiv</a>] [<a href="projects/006_slides.pdf">Slides</a>]
-  </li>
+    <li class="pub">
+      <div class="pub-num">C3</div>
+      <div class="pub-body">
+      <div class="pub-title">Polynomial-Time Relational Probabilistic Inference in Open Universes</div>
+      <div class="pub-authors">
+        (α-β)
+        <span class="me">Luise Ge</span>,
+        <a href="https://www.cse.wustl.edu/~bjuba/">Brendan Juba</a>,
+        <a href="https://sites.wustl.edu/krisnilsson/">Kris Nilsson</a>
+      </div>
+      <div class="pub-venue">IJCAI 2025</div>
+      <div class="pub-links">
+        [<a href="https://arxiv.org/pdf/2505.04115">arXiv</a>]
+      </div>
+      </div>
+    </li>
 
-  
-  
+    <li class="pub">
+      <div class="pub-num">C2</div>
+      <div class="pub-body">
+      <div class="pub-title">Learning Policy Committees for Effective Personalization in MDPs with Diverse Tasks</div>
+      <div class="pub-authors">
+        <span class="me">Luise Ge</span>,
+        <a href="https://mlanier.com">Michael Lanier</a>,
+        <a href="https://anindyasarkariith.github.io">Anindya Sarkar</a>,
+        <a href="https://bengisug.github.io">Bengisu Guresti</a>,
+        <a href="https://vorobeychik.com">Yevgeniy Vorobeychik</a>,
+        <a href="https://mig-ai.github.io">Chongjie Zhang</a>
+      </div>
+      <div class="pub-venue">ICML 2025</div>
+      <div class="pub-links">
+        [<a href="https://arxiv.org/abs/2503.01885">arXiv</a>] [<a href="projects/002_slides.pdf">Slides</a>]
+      </div>
+      </div>
+    </li>
 
-  
+    <li class="pub">
+      <div class="pub-num">C1</div>
+      <div class="pub-body">
+      <div class="pub-title">Axioms for AI Alignment from Human Feedback</div>
+      <div class="pub-authors">
+        (α-β)
+        <span class="me">Luise Ge</span>,
+        <a href="https://daniel-halpern.com">Daniel Halpern</a>,
+        <a href="https://evi-micha.github.io">Evi Micha</a>,
+        <a href="https://procaccia.info/">Ariel D. Procaccia</a>,
+        <a href="https://itai-shapira.com">Itai Shapira</a>,
+        <a href="https://vorobeychik.com">Yevgeniy Vorobeychik</a>,
+        <a href="https://junlinwu.com">Junlin Wu</a>
+      </div>
+      <div class="pub-venue">NeurIPS 2024 <span class="award">✦ Spotlight ✦</span></div>
+      <div class="pub-links">
+        [<a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/9328208f88ec69420031647e6ff97727-Paper-Conference.pdf">PDF</a>]
+      </div>
+      </div>
+    </li>
 
-  
+    <li class="pub">
+      <div class="pub-num">W1</div>
+      <div class="pub-body">
+      <div class="pub-title">Learning Linear Utility Functions From Pairwise Comparison Queries</div>
+      <div class="pub-authors">
+        <span class="me">Luise Ge</span>,
+        <a href="https://www.cse.wustl.edu/~bjuba/">Brendan Juba</a>,
+        <a href="https://vorobeychik.com">Yevgeniy Vorobeychik</a>
+      </div>
+      <div class="pub-venue">AAMAS 2024 Workshop / ADT 2024 (Abstract)</div>
+      <div class="pub-links">
+        [<a href="https://arxiv.org/pdf/2405.02612">arXiv</a>] [<a href="projects/001_slides.pdf">Slides</a>]
+      </div>
+      </div>
+    </li>
 
-   <li>
-    <papertitle> Mind the (DH) Gap! A Contrast in Risky Choices Between Reasoning and Conversational LLMs</papertitle>
-    <br>
-    <strong>Luise Ge</strong>, 
-    <a>Yongyan Zhang</a>, 
-    <a href="https://vorobeychik.com">Yvegeniy Vorobeychik</a>
-    <br>
-    <span class="venue">Main Conference (✦ Outstanding Paper Award ✦) at ACL 2026</span>
-    <br>
-    [<a href="https://arxiv.org/pdf/2602.15173">arXiv</a>] [<a href="projects/004_slides.pdf">Slides</a>]
-  </li>
+    <li class="pub">
+      <div class="pub-num">T1</div>
+      <div class="pub-body">
+      <div class="pub-title">Fair Allocation: Implementing and Evaluating an Algorithm for Competitive Allocation of Chores</div>
+      <div class="pub-authors">
+        <span class="me">Luise Ge</span>, supervised by
+        <a href="https://homepages.inf.ed.ac.uk/kousha/">Kousha Etessami</a>
+      </div>
+      <div class="pub-venue">Undergraduate Thesis, University of Edinburgh, 2022 <span class="award">✦ Outstanding Thesis ✦</span></div>
+      <div class="pub-links">
+        [<a href="https://project-archive.inf.ed.ac.uk/ug4/20223059/ug4_proj.pdf">PDF</a>]
+      </div>
+      </div>
+    </li>
 
-    <li>
-    <papertitle>Optimized Distortion in Linear Social Choice</papertitle>
-    <br>
-    <strong>Luise Ge</strong>, 
-    <a href="https://gregorykehne.com">Gregory Kehne</a>, 
-    <a href="https://vorobeychik.com">Yvegeniy Vorobeychik</a>
-    <br>
-    <span class="venue">✦ Oral ✦ at AAAI 2026 </span>
-    <br>
-    [<a href="https://arxiv.org/pdf/2510.20020">arXiv</a>] [<a href="projects/003_slides.pdf">Slides</a>]
-  </li>
-  
+  </ul>
 
+  <h3>Ongoing Projects</h3>
+  <ul class="pubs">
 
-    <li>
-    <papertitle>Polynomial-Time Relational Probabilistic Inference in Open Universes</papertitle>
-    <br>
-    (α-β) <strong>Luise Ge</strong>, 
-    <a href="https://www.cse.wustl.edu/~bjuba/">Brendan Juba</a>, 
-    <a href="https://sites.wustl.edu/krisnilsson/">Kris Nilsson</a>
-    <br>
-    <span class="venue">IJCAI 2025</span>
-    <br>
-    [<a href="https://arxiv.org/pdf/2505.04115">arXiv</a>] 
-  </li>
+    <li class="pub">
+      <div class="pub-num"></div>
+      <div class="pub-body">
+        <div class="pub-title">Pluralistic Alignment: A Survey Bridging Theory and Practice</div>
+        <div class="pub-authors">with Elinor Pool-Dayan</div>
+      </div>
+    </li>
 
-   <li>
-    <papertitle>Learning Policy Committees for Effective Personalization in MDPs with Diverse Tasks</papertitle>
-    <br>
-    <strong>Luise Ge</strong>, 
-    <a href="https://mlanier.com">Michael Lanier</a>, 
-    <a href="https://anindyasarkariith.github.io">Anindya Sarkar</a>, 
-    <a href="https://bengisug.github.io">Bengisu Guresti</a>, 
-    <a href="https://vorobeychik.com">Yevgeniy Vorobeychik</a>, 
-    <a href="https://mig-ai.github.io">Chongjie Zhang</a>
-    <br>
-    <span class="venue">ICML 2025</span>
-    <br>
-    [<a href="https://arxiv.org/abs/2503.01885">arXiv</a>] [<a href="projects/002_slides.pdf">Slides</a>]
-  </li>
-<li>
-    <papertitle>Axioms for AI Alignment from Human Feedback</papertitle>
-    <br>
-    (α-β) <strong>Luise Ge</strong>, 
-    <a href="https://daniel-halpern.com">Daniel Halpern</a>, 
-    <a href="https://evi-micha.github.io">Evi Micha</a>, 
-    <a href="https://procaccia.info/">Ariel D. Procaccia</a>, 
-    <a href="https://itai-shapira.com">Itai Shapira</a>, 
-    <a href="https://vorobeychik.com">Yevgeniy Vorobeychik</a>, 
-    <a href="https://junlinwu.com">Junlin Wu</a>
-    <br>
-    <span class="venue">✦ Spotlight ✦ at NeurIPS 2024</span>
-    <br>
-    [<a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/9328208f88ec69420031647e6ff97727-Paper-Conference.pdf">pdf</a>] 
-  </li>
+  </ul>
 
-  <li>
-    <papertitle>Learning Linear Utility Functions From Pairwise Comparison Queries</papertitle>
-    <br>
-    <strong>Luise Ge</strong>, 
-    <a href="https://www.cse.wustl.edu/~bjuba/">Brendan Juba</a>, 
-    <a href="https://vorobeychik.com">Yevgeniy Vorobeychik</a>
-    <br>
-    <span class="venue">AAMAS 2024 Workshop/ ADT 2024 abstract</span>
-    <br>
-    [<a href="https://arxiv.org/pdf/2405.02612?">arXiv</a>] [<a href="projects/001_slides.pdf">slides</a>]
-  </li>
+  <!-- ================= Misc ================= -->
+  <h2>Misc</h2>
+  <ul class="pubs">
+    <!-- Add items here, e.g.
+    <li class="pub"><div class="pub-body">Something fun</div></li>
+    -->
+  </ul>
 
-  <li>
-    <papertitle>Fair Allocation: Implementing and Evaluating an Algorithm for Competitive Allocation of Chores</papertitle>
-    <br>
-    Outstanding undergraduate thesis supervised by 
-    <a href="https://homepages.inf.ed.ac.uk/kousha/">Kousha Etessami</a>
-    <br>
-    <span class="venue">University of Edinburgh, 2022</span>
-    <br>
-    [<a href="https://project-archive.inf.ed.ac.uk/ug4/20223059/ug4_proj.pdf">pdf</a>]
-  </li>
+  <footer>
+    <a href="https://jonbarron.info/">This ubiquitous researcher website template spawned from here.</a><br>
+    Last updated: September 2026
+  </footer>
 
+</div>
 
-
- 
-
-</ul>
-
-  
-      
-      
-      
-      
-      
-      </table>
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-      <tr>
-        <td>
-        <br>
-        <p align="right">
-          <font size="2">
-          <a href="https://jonbarron.info/">This ubiquitous researcher website template spawned from here.</a>
-          <br>
-          Last updated: June 2026
-        </font>
-        </p>
-        </td>
-      </tr>
-      </table>
-
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110545952-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110545952-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
-  gtag('config', 'UA-110545952-1');
-</script>  
-            
-
-        
-        </td>
-      </tr>
-      </table>
-
-
-
-    
-
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110545952-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
   gtag('config', 'UA-110545952-1');
 </script>
-
-
-    </td>
-    </tr>
-  </table>
-  </body>
+</body>
 </html>
