@@ -40,6 +40,9 @@
     .misc p { margin: 0 0 10px; line-height: 1.5; }
     .misc ol { margin: 0 0 10px; padding-left: 20px; }
     .misc li { margin: 0 0 10px; line-height: 1.5; }
+    .with-logo { display: flex; gap: 20px; align-items: center; }
+    .with-logo > div { flex: 1; }
+    .synchria-logo { height: 138px; display: block; image-rendering: pixelated; }
     .abstract { margin: 6px 0 0 16px; padding-left: 10px; border-left: 2px solid #ccc; font-style: italic; }
     .award { color: #d62828; font-weight: 700; font-style: normal; }
 
@@ -317,11 +320,16 @@
     </p>
     <ol>
       <li>
+        <div class="with-logo">
+          <div>
         <strong>Social entrepreneurship.</strong>
         I recently created an app called <a href="https://synchria.xyz">Synchria</a>, and I am still figuring out how to build communities.
         In general, I believe there is a huge opportunity out there to help people connect with each other, whether for friendship,
         relationships, collaboration, or just helping each other out. The visible part is the website and social media, but there is an
         invisible part that is messier, more complicated, and even more important. I believe we now have good enough technology, including better search, to create a more spontaneous, effective, and heart-to-heart channel.
+          </div>
+          <a href="https://synchria.xyz"><img class="synchria-logo" src="figures/synchria_logo.png" alt="Synchria logo"></a>
+        </div>
       </li>
       <li>
         <strong>Philosophy of science and maths.</strong>
