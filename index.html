@@ -11,34 +11,40 @@
     a:focus, a:hover { color: #f09228; text-decoration: none; }
     body, td, th, tr, p, a, li, div {
       font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 12px;
+      font-size: 13px;
     }
     body { margin: 0; color: #000; }
-    .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+    .container { max-width: 900px; margin: 0 auto; padding: 20px; }
 
     .intro { display: flex; gap: 20px; align-items: center; }
     .intro-text { flex: 1; }
-    .intro img { width: 200px; height: auto; }
-    .name { font-size: 14px; margin-right: 8px; }
+    .intro img { width: 220px; height: auto; }
+    .name { font-size: 16px; margin-right: 8px; }
     .nav a + a::before { content: "/"; color: #000; margin: 0 6px; }
 
-    h2 { font-size: 14px; font-weight: normal; margin: 30px 0 4px; }
+    h2 { font-size: 16px; font-weight: normal; margin: 30px 0 4px; }
     .note { margin: 0 0 6px; }
 
     .pubs { list-style: none; margin: 0; padding: 0; }
-    .pub { margin: 0 0 18px; line-height: 1.5; display: flex; }
+    .pub { margin: 0 0 12px; line-height: 1.5; display: flex; }
     .pub-num { width: 36px; flex-shrink: 0; font-weight: 700; color: #003366; }
     .pub-body { flex: 1; }
-    h3 { font-size: 12px; font-weight: 700; margin: 18px 0 10px; }
+    h3 { font-size: 13px; font-weight: 700; margin: 18px 0 10px; }
     .pub-title { font-weight: 700; color: #003366; }
     .me { font-weight: 700; }
     .pub-venue { font-style: italic; color: #4B0082; }
     .pub-venue a { color: #4B0082; }
     .pub-venue a:hover { color: #f09228; }
+    .rq { margin-bottom: 1px; }
+    .rq b { color: #003366; }
+    .misc p { margin: 0 0 10px; line-height: 1.5; }
+    .misc ol { margin: 0 0 10px; padding-left: 20px; }
+    .misc li { margin: 0 0 10px; line-height: 1.5; }
+    .abstract { margin: 6px 0 0 16px; padding-left: 10px; border-left: 2px solid #ccc; font-style: italic; }
     .award { color: #d62828; font-weight: 700; font-style: normal; }
 
     footer { text-align: right; margin-top: 30px; }
-    footer, footer a { font-size: 11px; }
+    footer, footer a { font-size: 12px; }
 
     @media (max-width: 600px) {
       .intro { flex-direction: column-reverse; }
@@ -58,7 +64,7 @@
       <p>
         I am a Computer Science PhD candidate at Washington University in St. Louis, coadvised by
         Prof. <a href="https://vorobeychik.com">Yevgeniy Vorobeychik</a> and Prof. <a href="https://gregorykehne.com">Gregory Kehne</a>.
-        My current research interests cover the foundations of AI (e.g., integrating learning and reasoning, and knowledge discovery) and collective decision making (e.g., AI alignment, and computational social choice).
+        My current research interests cover the foundations of AI (e.g., integrating learning and reasoning, and automated discovery) and collective decision making (e.g., AI alignment, and computational social choice).
       </p>
       <p>
         I started out as a cognitive science student at the University of Edinburgh, with the passion to
@@ -86,6 +92,7 @@
     <li class="pub">
       <div class="pub-num">C9</div>
       <div class="pub-body">
+      <div class="rq"><b>Q:</b> If each voter answers only one or two comparison questions, can we still learn enough about the whole population to make good collective decisions?</div>
       <div class="pub-title">Linear Social Choice with Few Queries: A Moment-Based Approach</div>
       <div class="pub-authors">
         <span class="me">Luise Ge</span>,
@@ -107,6 +114,7 @@
     <li class="pub">
       <div class="pub-num">C8</div>
       <div class="pub-body">
+      <div class="rq"><b>Q:</b> Instead of learning a full model, can we learn from partially observed data just what a given query needs, and still perform lifted reasoning efficiently?</div>
       <div class="pub-title">Query-Driven Learning for Lifted Reasoning</div>
       <div class="pub-authors">
         (α-β)
@@ -123,7 +131,8 @@
     <li class="pub">
       <div class="pub-num">C7</div>
       <div class="pub-body">
-      <div class="pub-title">Lifted Relational Probabilistic Inference via Implicit Learning</div>
+      <div class="rq"><b>Q:</b> Can we efficiently perform lifted inference under uncertainty, reasoning about many objects at once, from incomplete knowledge and partially observed data, without ever building an explicit model?</div>
+      <div class="pub-title">Implicit Learning for Reasoning in First-Order Probabilistic Logic</div>
       <div class="pub-authors">
         (α-β)
         <span class="me">Luise Ge</span>,
@@ -133,7 +142,7 @@
       </div>
       <div class="pub-venue">UAI 2026</div>
       <div class="pub-links">
-        [<a href="https://arxiv.org/pdf/2602.14890">arXiv</a>]
+        [<a href="https://proceedings.mlr.press/v337/ge26a.html">Paper</a>] [<a href="https://arxiv.org/pdf/2602.14890">arXiv</a>]
       </div>
       </div>
     </li>
@@ -141,6 +150,7 @@
     <li class="pub">
       <div class="pub-num">C6</div>
       <div class="pub-body">
+      <div class="rq"><b>Q:</b> In federated learning, when clients use different models and have different data, how can they still benefit from each other while sharing only their predictions?</div>
       <div class="pub-title">COSMOS: Model-Agnostic Personalized Federated Learning with Clustered Server Models and Pseudo-Label-Only Communication</div>
       <div class="pub-authors">
         Ben Rachmut,
@@ -159,6 +169,7 @@
     <li class="pub">
       <div class="pub-num">C5</div>
       <div class="pub-body">
+      <div class="rq"><b>Q:</b> When LLMs make decisions under risk, do they act like rational agents or like humans, and why do reasoning and conversational models behave so differently?</div>
       <div class="pub-title">Mind the (DH) Gap! A Contrast in Risky Choices Between Reasoning and Conversational LLMs</div>
       <div class="pub-authors">
         <span class="me">Luise Ge</span>,
@@ -175,6 +186,7 @@
     <li class="pub">
       <div class="pub-num">C4</div>
       <div class="pub-body">
+      <div class="rq"><b>Q:</b> When voters and candidates are described by features, how much welfare do we lose by choosing a winner from rankings alone, and how can we lose as little as possible?</div>
       <div class="pub-title">Optimized Distortion in Linear Social Choice</div>
       <div class="pub-authors">
         <span class="me">Luise Ge</span>,
@@ -191,6 +203,7 @@
     <li class="pub">
       <div class="pub-num">C3</div>
       <div class="pub-body">
+      <div class="rq"><b>Q:</b> Can we reason efficiently under uncertainty about objects and their relations, even when we don't know how many objects there are, or there are infinitely many?</div>
       <div class="pub-title">Polynomial-Time Relational Probabilistic Inference in Open Universes</div>
       <div class="pub-authors">
         (α-β)
@@ -208,6 +221,7 @@
     <li class="pub">
       <div class="pub-num">C2</div>
       <div class="pub-body">
+      <div class="rq"><b>Q:</b> When tasks are too diverse for a single policy, can a small committee of policies ensure that most tasks, even unseen ones, have a near-optimal option?</div>
       <div class="pub-title">Learning Policy Committees for Effective Personalization in MDPs with Diverse Tasks</div>
       <div class="pub-authors">
         <span class="me">Luise Ge</span>,
@@ -227,6 +241,7 @@
     <li class="pub">
       <div class="pub-num">C1</div>
       <div class="pub-body">
+      <div class="rq"><b>Q:</b> When we learn one reward model from many people's feedback, does the standard approach respect basic principles of collective decision making, and if not, what does?</div>
       <div class="pub-title">Axioms for AI Alignment from Human Feedback</div>
       <div class="pub-authors">
         (α-β)
@@ -248,6 +263,7 @@
     <li class="pub">
       <div class="pub-num">W1</div>
       <div class="pub-body">
+      <div class="rq"><b>Q:</b> When can we learn a person's preferences from pairwise comparisons, either to predict their choices or recover their true utilities, and how much does choosing the questions help?</div>
       <div class="pub-title">Learning Linear Utility Functions From Pairwise Comparison Queries</div>
       <div class="pub-authors">
         <span class="me">Luise Ge</span>,
@@ -264,6 +280,7 @@
     <li class="pub">
       <div class="pub-num">T1</div>
       <div class="pub-body">
+      <div class="rq"><b>Q:</b> Can a market-based method for dividing chores fairly work in practice, and how does it hold up in running time, privacy, and incentives to misreport?</div>
       <div class="pub-title">Fair Allocation: Implementing and Evaluating an Algorithm for Competitive Allocation of Chores</div>
       <div class="pub-authors">
         <span class="me">Luise Ge</span>, supervised by
@@ -284,6 +301,7 @@
     <li class="pub">
       <div class="pub-num"></div>
       <div class="pub-body">
+        <div class="rq"><b>Q:</b> How can the theory and practice of pluralistic alignment inform each other?</div>
         <div class="pub-title">Pluralistic Alignment: A Survey Bridging Theory and Practice</div>
         <div class="pub-authors">with Elinor Pool-Dayan</div>
       </div>
@@ -293,15 +311,35 @@
 
   <!-- ================= Misc ================= -->
   <h2>Misc</h2>
-  <ul class="pubs">
-    <!-- Add items here, e.g.
-    <li class="pub"><div class="pub-body">Something fun</div></li>
-    -->
-  </ul>
+  <div class="misc">
+    <p>
+      Here are a few more topics I think I will be passionate about for life, and my recent attempts and thoughts under their umbrella:
+    </p>
+    <ol>
+      <li>
+        <strong>Social entrepreneurship.</strong>
+        I recently created an app called <a href="https://synchria.xyz">Synchria</a>, and I am still figuring out how to build communities.
+        In general, I believe there is a huge opportunity out there to help people connect with each other, whether for friendship,
+        relationships, collaboration, or just helping each other out. The visible part is the website and social media, but there is an
+        invisible part that is messier, more complicated, and even more important. I believe we now have good enough technology, including better search, to create a more spontaneous, effective, and heart-to-heart channel.
+      </li>
+      <li>
+        <strong>Philosophy of science and maths.</strong>
+        The recent shake-ups between AI and maths are definitely shocking, but in general I still feel optimistic, not hostile, towards the technology itself.
+        That said, I fully agree with Prof. Tarik Aougab's belief that maths needs humans and humans need maths
+        (check out <a href="https://proofsandprompts.com/2026/09/23/navigating-the-ai-crisis-a-humble-guide-for-students/">this amazing guide for maths students</a>).
+        My short essay will also appear on <a href="https://proofsandprompts.com">Proofs &amp; Prompts</a> soon! Here is its abstract:
+        <div class="abstract">
+          &ldquo;All the relationships are emotional,&rdquo; shouted a stranger on the street. Turns out that's true even for mathematics.
+          Emotion may be one of the most human things we have. Judging by what AI still can't do, perhaps we should cherish this irrational part more.
+        </div>
+      </li>
+    </ol>
+  </div>
 
   <footer>
     <a href="https://jonbarron.info/">This ubiquitous researcher website template spawned from here.</a><br>
-    Last updated: September 2026
+    Last updated: October 2026
   </footer>
 
 </div>
